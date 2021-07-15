@@ -1,0 +1,22 @@
+{
+  "name": "html-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mariamv29/HTML-generator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mariamv29/HTML-generator/issues"
+  },
+  "homepage": "https://github.com/mariamv29/HTML-generator#readme",
+  "devDependencies": {
+    "jest": "^27.0.6"
+  }
+}
