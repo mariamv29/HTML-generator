@@ -20,6 +20,10 @@
     "jest": "^27.0.6"
   },
   "dependencies": {
-    "inquirer": "^8.1.2"
+    "inquirer": "^8.1.2",
+    "js2xmlparser": "^4.0.1",
+    "mustache": "^4.2.0",
+    "xml2js": "^0.4.23",
+    "zip-dir": "^2.0.0"
   }
 }
