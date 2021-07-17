@@ -1,7 +1,7 @@
 # HTML-generator
 
 ## Description 
-
+The HTML-generator is an application that allows a user to input via the command line to generate an HTML page by using NODe.js and Obeject-Oriented Programing while also running failed test. 
 
 ## Screenshot 
 ![screenshot]()
@@ -51,27 +51,18 @@ If your README is very long, add a table of contents to make it easy for users t
 ## Installation
 
 `npm install` >
-`npm inqurer` 
-
-
+`npm inquirer` 
 
 ## Usage 
 
-To use the README-Generator:
-1. 
-2. 
-3. 
+To use the HTML-Generator:
+1. Open the terminal.
+2. While in the root of your directory run `node index.js` command.
+3. Answer inquirer promp questions.
+4. Index.html under "dist" folder will be updated with the unser input.
 
 
 ---
-
-🏆 
-## Badges
-
-![badmath]()
-
-
-
 
 ## Contributing / Credits
 
