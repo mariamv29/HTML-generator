@@ -1,5 +1,5 @@
 //create a function to generate html template/ team profile
-function generateTeam(data) {
+function generateTeam(teamArray) {
   return `
     
     <!DOCTYPE html>
@@ -26,12 +26,12 @@ function generateTeam(data) {
 
     
         <div class="col-12 col-md-6 mb-2 bg-dark text-light p-3 flex-column">
-          <h3 class="team-item-title text-light">${data.name}</h3>
-          <h5 class="team-item-title text-light">${data.role}</h5>
+          <h3 class="team-item-title text-light">${teamArray.managerName}</h3>
+          <h5 class="team-item-title text-light"></h5>
           <h5 class="team-item-title text-light">
-            ID:${data.managerId}</h5
-          <h5 class="team-item-title text-light">Office Number:${data.officeNumber}</h5>
-          <a href="mailto:${data.link}? subject=subject text" class="btn mt-auto"><i class="fab fa-github mr-2"></i>Email</a>
+            ID:${teamArray.managerId}</h5>
+          <h5 class="team-item-title text-light">Office Number:</h5>
+          <a href="mailto:${teamArray.link}? subject=subject text" class="btn mt-auto"><i class="fab fa-github mr-2"></i>Email</a>
           
         </div>
       
@@ -42,7 +42,7 @@ function generateTeam(data) {
 
   </main>
   <footer class="container text-center py-3">
-    <h3 class="text-dark">&copy; 2021 by ${data.name}</h3>
+    <h3 class="text-dark">&copy; 2021 by ${teamArray.name}</h3>
   </footer>
 </body>
 </html>
