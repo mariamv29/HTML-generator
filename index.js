@@ -178,6 +178,7 @@ inquirer.prompt(addMemberQuestions).then((newMember) => {
         loopQuestions();
     } if(newMember.newMember === "No") {
         writeToFile("index.html", generateTeam(teamArray));
+        console.log("Your team has been created!")
     }
 });
 }
