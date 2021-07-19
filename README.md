@@ -4,6 +4,7 @@
 The HTML-generator is an application that allows a user to input via the command line to generate an HTML page by using NODe.js and Obeject-Oriented Programing while also running failed test. 
 
 ## Screenshot 
+![screenshot](./assets/video/screen.jpg)
 ![screenshot]()
 
 
@@ -66,4 +67,4 @@ To use the HTML-Generator:
 
 ## Contributing / Credits
 
-[mariamv29]()
+[mariamv29](https://github.com/mariamv29/HTML-generator.git)

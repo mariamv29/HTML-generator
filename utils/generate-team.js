@@ -28,7 +28,10 @@ function generateTeam(teamArray) {
           ${teamArray.map(({ name, id, email, role, officeNumber,github, school }) => {
             return `   
          <div class="col-12 col-md-6 mb-2 bg-dark text-light p-3 flex-column">
-          <h3 class="team-item-title text-light">${name} </h3>
+          <h3 class="team-item-title text-light"><span class="material-icons">
+          perm_identity
+          </span>
+          ${name} </h3>
           <h5 class="team-item-title text-light">${role}</h5>
            <h5 class="team-item-title text-light">
             ID: ${id}</h5>
@@ -36,7 +39,7 @@ function generateTeam(teamArray) {
           <h5 class="team-item-title text-light">Office Number:${officeNumber}</h5>
           <h5 class="team-item-title text-light">GitHub:${github}</h5>
           <h5 class="team-item-title text-light">Office Number:${school}</h5>
-          <a href="mailto:? subject=subject text" class="btn mt-auto"><i class="fab fa-github mr-2"></i>Email:${email}</a>
+          <a href="mailto:${email}? subject=subject text" class="btn mt-auto"><i class="fab fa-github mr-2"></i>Email:</a>
           
         </div>
       `;
@@ -47,7 +50,7 @@ function generateTeam(teamArray) {
 
   </main>
   <footer class="container text-center py-3">
-    <h3 class="text-dark">&copy; 2021 by </h3>
+    <h3 class="text-dark">&copy; 2021 by Maria Mireles</h3>
   </footer>
 </body>
 </html>
