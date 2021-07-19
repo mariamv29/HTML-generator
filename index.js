@@ -52,8 +52,8 @@ const managerQuestions = [
   },
   {
       type: "input",
-      name: "officerNumber",
-      message: "Enter your officer number:"
+      name: "officeNumber",
+      message: "Enter your office number:",
   },
 
 ]
@@ -78,7 +78,7 @@ const newMemberRole = {
 const engineerQuestions = [
     {
       type: "input",
-      name: "EngineerName",
+      name: "engineerName",
       message: "Enter the name of the engineer's name'",
       validate: (nameInput) => {
         if (nameInput) {
@@ -145,7 +145,7 @@ const internQuestions = [
     },
     {
       type: "input",
-      name: "InternLink",
+      name: "internLink",
       message: "Enter the intern's email address:",
     },
 
@@ -166,6 +166,7 @@ function initManager() {
   inquirer.prompt(managerQuestions).then((response) => {
       let manager = new Manager(response.managerName, response.managerId, response.managerLink, response.officeNumber);
       teamArray.push(manager);
+      console.log(manager)
       initTeamManager();
 })
 };
@@ -196,6 +197,7 @@ function loopQuestions() {
             inquirer.prompt(internQuestions).then((response) => {
             let intern = new Intern(response.internName, response.internId, response.internLink, response.school);
             teamArray.push(intern);
+            console.log(teamArray)
             initTeamManager(); 
         });
     }

@@ -3,8 +3,8 @@ const Manager = require ('../lib/Manager');
 
 test('creates a manager object', () => {
     const number = 10; 
-    const email = "test@gmail.com"
-    const officeNumber = 100;
+    const email = "test@gmail.com";
+    const officeNumber = 100
     const manager = new Manager('Alex', number, email, officeNumber);
 
     
